@@ -1,0 +1,316 @@
+//Variable
+  String name="Joshua";
+  int age=20;
+  double pi=3.14159;
+  bool isNew=true;
+  bool isOld=false;
+  int a=10;
+  int b=20;
+  // ======================= PROGRAMMING CONCEPTS ========================
+
+      //========================= VARIABLES =========================
+
+      /*
+      String name = "Joshua";
+      int age = 20;
+      double pi = 3.14159;
+      bool isNew = true;
+      bool isOld = false;
+      */
+
+      // ========================= OPERATORS =========================
+
+      // --- Basic Math Operations (+, -, *, /, % - modulus) ---
+          /*
+      int a = 10;
+      int b = 20;
+
+      print(a + b);      // Addition
+      print(a - b);      // Subtraction
+      print(a * b);      // Multiplication
+      print(a % b);      // Modulus (remainder)
+      print(a / b);      // Division
+      */
+
+      // --- Comparison Operators (>, <, >=, <=, ==, !=) ---
+         /*
+          int a = 10;
+          int b = 20;
+
+          print(a == b);     // Equal to
+          print(a != b);     // Not equal to
+          print(a > b);      // Greater than
+          print(a < b);      // Less than
+          print(a >= b);     // Greater than or equal to
+          print(a <= b);     // Less than or equal to
+          */
+
+      // --- Assignment Operators (=, +=, -=, *=, /=, %=) ---
+        /*
+        int a = 10;
+        int b = 20;
+
+        print(a = b);      // Assign
+        print(a += b);     // Add and assign
+        print(a -= b);     // Subtract and assign
+        print(a *= b);     // Multiply and assign
+        print(a %= b);     // Modulus and assign
+        */
+
+      // --- Increment and Decrement Operators also Iteration operators  (++/--) ---
+          /*
+      int a = 10;
+      print(a++);        // Post-increment a= 10, then a becomes 11
+      print(a--);        // Post-decrement a= 11, then a becomes 10
+      print(++a);        // Pre-increment  a= 10, then a becomes 11
+      print(--a);        // Pre-decrement  a= 11, then a becomes 10
+      */
+
+      // --- Logical Operators (&&, ||, !, ^, &, |) ---
+          /*
+      bool isNew = true;
+      bool isOld = false;
+
+      print(isNew && isOld);   // Logical AND
+      print(isNew || isOld);   // Logical OR
+      print(!isNew);           // Logical NOT
+      print(!isOld);           // Logical NOT
+      print(isNew ^ isOld);    // Logical XOR
+      print(isNew & isOld);    // Bitwise AND
+      print(isNew | isOld);    // Bitwise OR
+      */
+
+      // ========================= CONTROL FLOW =========================
+
+      // --- If Statement ---
+          /*
+      if (condition) {
+        // do something
+      } else if (condition) {
+        // do something else
+      } else {
+        // do something else at the end
+      }
+      */
+      // Example:
+          /*
+      if (name == "Joshua" && age >= 18) {
+        print("You are an adult");
+      } else if (name == "Joshua" && age < 18) {
+        print("You are a minor");
+      } else {
+        print("You are not Joshua");
+      }
+      */
+
+      // --- Grading Example ---
+      /*
+      String grade = "A";
+      if (grade == "A") {
+        print("Excellent");
+      } else if (grade == "B") {
+        print("Good");
+      } else if (grade == "C") {
+        print("Average");
+      } else if (grade == "D") {
+        print("Below Average");
+      } else {
+        print("Terrible");
+      }
+      */
+
+      // --- Switch Case ---
+      /*
+      switch (variable) {
+        case value1:
+          // do something
+          break;
+        case value2:
+          // do something else
+          break;
+        default:
+          // do something else at the end
+       */
+      //Example:
+      /*
+      switch (grade) {
+        case "A":
+          print("Excellent");
+          break;
+        case "B":
+          print("Good");
+          break;
+        case "C":
+          print("Average");
+          break;
+        case "D":
+          print("Below Average");
+          break;
+        default:
+          print("Terrible");
+      }
+      */
+
+      // --- For Loop ---
+      /*
+      for (initialization; condition; iteration) {
+        // do something
+      }
+      */
+      // Example:
+      /*
+      for (int i = 0; i < 7; i++) {
+        if (i == 3) {
+          continue; // skip the iteration
+        }
+        if (i == 6) {
+          break; // exit the loop
+        }
+        print(i);
+      }
+      */
+
+      // --- While Loop ---
+      /*      while (condition) {
+        // do something
+      }
+      */
+      // Example:
+      /*
+      int countdown= 10;
+        while (countdown>=0){
+          print (countdown);
+          countdown--;
+        }
+       */
+
+      // --- Do While Loop ---
+      /*
+      do {
+        // do something
+      } while (condition);
+      */
+      // Example:
+      /*
+      int countdown= 10;
+        do {
+          print (countdown);
+          countdown--;
+        } while (countdown>=0);
+       */
+
+      // --- Nested Loop ---
+      /*
+      for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+          print("i: $i, j: $j");
+        }
+       */
+
+      // --- Break and Continue ---
+      /*
+      for (int i = 0; i < 10; i++) {
+        if (i == 5) {
+          continue; // skip the iteration
+        }
+        if (i == 8) {
+          break; // exit the loop
+        }
+        print(i);
+      }
+       */
+
+
+
+  // ============== FUNCTIONS / METHODS ==============
+        // void means the function does not return anything
+
+        // --- Basic Function ---
+        /*
+        void functionName() {
+          // do something
+        }
+        */
+
+        // Example:
+        /*
+        void printName() {
+          print("Joshua");
+        }
+        */
+
+        // --- Function with Parameters ---
+        /*
+        void functionName(String name) {
+          // do something
+        }
+        */
+
+        // Example:
+        /*
+        void printName(String name) {
+          print(name);
+        }
+
+
+         Basic function
+         void greet() {
+           print("Hello, \$name");
+         }
+
+        void greetPerson(String name1) {
+           print("Hello, " + name1);
+         }
+        */
+        // Function with return type
+        /* <returnType> functionName(parameters) {
+           // do something
+           return value;
+         }*/
+
+        // String greetPerson2(String name2) {
+        //   return "Hello, \$name2";
+        // }
+
+        // int add(int a, int b) {
+        //   return a + b;
+        // }
+        //----calling the functions----
+          /*
+          greet();
+          greetPerson("Josh");
+          String greeting = greetPerson2("John");
+          print(greeting);
+          int sum = add(10, 20);
+          print("Sum: $sum");
+          */
+  // ========================= DATA STRUCTURES =========================
+  // --- List ---
+  /*
+  List<String> names = ["Joshua", "John", "Jane"];
+   */
+  List numbers = [1, 2, 3, 4, 5];
+  void printnumbers(numbers) {
+    for (int i=0; i<=numbers.length; i++){
+      print(numbers[i]);
+    }
+}
+
+  // --- Set ---
+  /*
+  Set<String> namesSet = {"Jos  hua", "John", "Jane"};
+   */
+  Set numbersSet = {1, 2, 3, 4, 5};
+  // --- Map ---
+  /*
+  Map<String, int> ages = {
+    "Joshua": 20,
+    "John": 25,
+    "Jane": 30
+  };
+   */
+  Map<String, int> ages = {
+    "Joshua": 20,
+    "John": 25,
+    "Jane": 30
+  };
