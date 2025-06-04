@@ -62,23 +62,22 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,*/
           children: [
             //box_1
-            Container(
-                height: 200,
-                width: 200,
-                color: Colors.blue,
+            Expanded(
+              child: Container(
+                  color: Colors.blue,
+              ),
             ),
 
             //box_2
-            Container(
-                height: 200,
-                width: 200,
-                color: Colors.blue[400]
+            Expanded(
+              child: Container(
+                  color: Colors.blue[400]
+              ),
             ),
 
             //box_3
             Expanded(
               child: Container(
-                  width: 200,
                   color: Colors.blue[200]
               ),
             ),
