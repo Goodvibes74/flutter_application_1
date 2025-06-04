@@ -25,10 +25,7 @@ Map<String, int> ages = {
 Set<String> namesSet = {"Joshua", "John", "Jane"};
 // Set of integers
 Set<int> numbersSet = {1, 2, 3, 4, 5};
-// Enum for days of the week
-enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
-// Enum for colors
-enum Colors { Red, Green, Blue, Yellow, Orange, Purple }
+
 
 void main() {
   int a= 10;
@@ -195,6 +192,32 @@ void main() {
   };
   print('Ages map: $ages');
 }
+//more maps
+Map<String, String> person = {
+  "name": "Joshua",
+  "age": "20",
+  "city": "New York"
+};
+Map<String, int> scores = {
+  "Joshua": 90,
+  "John": 85,
+  "Jane": 95
+};
+//calling the items value
+//scores[John] -> 85
+
+// --- List of Maps ---
+List<Map<String, String>> people = [
+  {"name": "Joshua", "age": "20"},
+  {"name": "John", "age": "25"},
+  {"name": "Jane", "age": "30"}
+];
+// --- Map of Lists ---
+Map<String, List<String>> students = {
+  "Joshua": ["Math", "Science"],
+  "John": ["English", "History"],
+  "Jane": ["Art", "Music"]
+};
 
 // --- Basic Function ---
 void greet() {
@@ -217,5 +240,98 @@ int add(int a, int b) {
 void print_numbers(List numbers) {
   for (int i = 0; i < numbers.length; i++) {
     print('Number: ${numbers[i]}');
+  }
+}
+// ========================= OBJECT ORIENTED PROGRAMMING ========================
+// --- Class Declaration ---
+class Person {
+  String name;
+  int age;
+
+  // Constructor
+  Person(this.name, this.age);
+
+  // Method
+  void greet() {
+    print("Hello, my name is $name and I am $age years old.");
+  }
+}
+// --- Inheritance ---
+class Student extends Person {
+  String major;
+
+  // Constructor
+  Student(String name, int age, this.major) : super(name, age);
+
+  // Method
+  void study() {
+    print("$name is studying $major.");
+  }
+}
+// --- Polymorphism ---
+class Animal {
+  void sound() {
+    print("Animal makes a sound");
+  }
+}
+class Dog extends
+  Animal {
+  @override
+  void sound() {
+    print("Dog barks");
+  }
+}
+class Cat extends
+  Animal {
+  @override
+  void sound() {
+    print("Cat meows");
+  }
+}
+// --- Abstract Class ---
+abstract class Shape {
+  double area();
+  double perimeter();
+}
+class Circle extends Shape {
+  double radius;
+
+  Circle(this.radius);
+
+  @override
+  double area() {
+    return 3.14 * radius * radius;
+  }
+
+  @override
+  double perimeter() {
+    return 2 * 3.14 * radius;
+  }
+}
+class Rectangle extends Shape {
+  double length;
+  double width;
+
+  Rectangle(this.length, this.width);
+
+  @override
+  double area() {
+    return length * width;
+  }
+
+  @override
+  double perimeter() {
+    return 2 * (length + width);
+  }
+}
+// --- Interface ---
+abstract class Drawable {
+  void draw();
+}
+
+class Square implements Drawable {
+  @override
+  void draw() {
+    print("Drawing a square");
   }
 }
