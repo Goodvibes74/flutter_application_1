@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Page1(),
       routes: {
+        '/Page 1' : (context)=>Page1(),
         '/Page 2' : (context)=>Page2(),
       },
     );
